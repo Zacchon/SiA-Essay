@@ -124,11 +124,7 @@ var drawBySignature = function(signature, sourceIdt) {
         rotatedTriangles[4] = rotatedCanvas(srcCanvas, base/2, height*2/3, 4*Math.PI/3);
         rotatedTriangles[5] = rotatedCanvas(rotatedTriangles[2], base/2, height/2, Math.PI);
         rotatedTriangles[1] = rotatedCanvas(rotatedTriangles[4], base/2, height/2, Math.PI);
-        ctx.drawImage(rotatedCanvas(srcCanvas, base/2, height*2/3, 2*Math.PI/3), 200, 0)
-        ctx.drawImage(rotatedCanvas(srcCanvas, base/2, height/2, Math.PI), 300, 0)
-        for (var i=0; i<6; i++) {
-            ctx.drawImage(rotatedTriangles[i], i*base/2, height);
-        }
+
         var tmap = [[0,1,4,3,2,5],[3,2,5,0,1,4]];
         for (var i=-1; i*base/2 < targetCanvas.width; i++) {
             for (var j=0; j*height < targetCanvas.height; j++) {
