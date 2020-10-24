@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Essay</title>
+    <link rel=stylesheet href="style.css">    
+</head>
+<body>
+    <form onsubmit="return imageSent()">
+        <label for="img">Select source image:</label>
+        <input type="file" id="img" name="img">
+        <p>Choose signature:</p>
+        <input type="radio" id="2222" name="signature" value="2222" checked>
+        <label for="2222">2222</label>
+        <br>
+        <input type="radio" id="*2222" name="signature" value="*2222">
+        <label for="*2222">*2222</label>
+        <br>
+        <input type="radio" id="632" name="signature" value="632">
+        <label for="632">632</label>
+        <br>
+        <input type="submit">
+    </form>
+    <canvas id="sourceCanvas"></canvas>
+    <canvas id="targetCanvas"></canvas>
+    <script src="script.js"></script>
+</body>
+</html>
